@@ -1,3 +1,2 @@
-var addon = require("bindings")("addon");
+var addon = require("bindings")("duster");
 
-console.log(addon.Oof());

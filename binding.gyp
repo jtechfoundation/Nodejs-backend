@@ -1,7 +1,7 @@
 {
   "targets": [
     {
-      "target_name": "addon",
+      "target_name": "duster",
       "cflags!": [ "-fno-exceptions" ],
       "cflags_cc!": [ "-fno-exceptions" ],
       "sources": [ "src/index.cc" ],
