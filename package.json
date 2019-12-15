@@ -6,9 +6,9 @@
   "version": "0.0.1",
   "description": "A simple Node app built on Express, instantly up and running.",
   "main": "server.js",
-  "scripts": {
-  },
+  "scripts": {},
   "dependencies": {
+    "node-gyp": "^6.0.1"
   },
   "engines": {
     "node": "8.x"
