@@ -1,29 +1,15 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
-  "name": "hello-express",
+  "name": "nodejs-backend-refresh",
   "version": "0.0.1",
-  "description": "A simple Node app built on Express, instantly up and running.",
-  "main": "server.js",
-  "scripts": {
-    "dev:build":"node-gyp configure; node-gyp build; exit 0"
-  },
+  "description": "simple things",
+  "main": "index.js",
+  "scripts": {},
   "dependencies": {
-    "node-gyp": "^6.0.1",
-    "node-addon-api": "^2.0.0",
-    "bindings": "^1.5.0"
+    "debug": "^4.1.1"
   },
   "engines": {
     "node": "8.x"
   },
-  "repository": {
-    "url": "https://glitch.com/edit/#!/hello-express"
-  },
   "license": "MIT",
-  "keywords": [
-    "node",
-    "glitch",
-    "express"
-  ]
+  "keywords": []
 }
