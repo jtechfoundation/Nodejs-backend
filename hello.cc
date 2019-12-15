@@ -1,19 +1,16 @@
-// hello.cc
-#include <node.h>
-#include <iostream>
+#include "napi.h"
 
-using namespace v8;
-using namespace std;
-namespace demo {
-
-void Debuggeer(const FunctionCallbackInfo<Value>& args) {
-  cout << ""
+Napi::String Method(const Napi::CallbackInfo& info) {
+  Napi::Env env = info.Env();
+  return Napi::String::New(env, "world");
 }
 
-void Initialize(Local<Object> exports) {
-  NODE_SET_METHOD(exports, "filter", Debuggeer);
+Napi::Object Init(Napi::Env env, Napi::Object exports) {
+  exports.Set(Napi::String::New(env, "hello"),
+              Napi::Function::New(env, Method));
+  return exports;
 }
 
-NODE_MODULE(NODE_GYP_MODULE_NAME, Initialize)
 
-}  // namespace demo
+
+NODE_API_MODULE(hello, Init)
