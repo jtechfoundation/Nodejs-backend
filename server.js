@@ -1,3 +1,3 @@
-var addon = require('bindings')('addon');
+var addon = require("bindings")("addon");
 
-addon.Init
+console.log(addon.Oof());
