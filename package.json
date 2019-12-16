@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {},
   "dependencies": {
-    "debug": "^4.1.1"
+    "debug": "^4.1.1",
+    "cosmiconfig": "^6.0.0"
   },
   "engines": {
     "node": "8.x"
