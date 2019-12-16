@@ -6,21 +6,16 @@ var explorer = cosmiconfig("bcknd");
 //explorer config
 var x;
 
-function SetHttp(serve, port, options = { async: false, forceHttps: true }) {
+function SetHttp(serve, port, options = { forceHttps: true }) {
+  var url = require("url");
   var HTTP = require("http");
   if (options.forceHttps === true) {
-    
+    serve.replace(x.httpForce, "var url = require(\"url\"); if (url.parse(req.url))"); //the httpForce comment should be at the top of the function ex:
+    //function Web (req,res){
+    //HTTP_FORCE_COMMENT
+    //res.end("123456");
+    //}
   }
-  if (options.async === true) {
-    delete options.async;
-    AsyncSetHttp(serve,port,options);
-  }
-}
-
-//***********************************************
-
-async function AsyncSetHttp(serve, port, options) {
-  
 }
 
 //**************************************************
