@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "simple things",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test":"node /p 'require('nodejs-backend-refresh').SetHttp()'"
+  },
   "dependencies": {
     "debug": "^4.1.1",
     "cosmiconfig": "^6.0.0"
