@@ -4,7 +4,7 @@
 
 ## Note:
 
-- it is suggested you use the --no-deprecation flags when including this in any server/app, it can throw deprecation warnings due to this runtime using "old" methods tht are currently deprecated
+- it is suggested you use the --no-deprecation flag when including this in any server/app, it can throw deprecation warnings due to this runtime using "old" methods tht are currently deprecated
 
 ---
 
