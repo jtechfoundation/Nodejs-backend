@@ -8,9 +8,9 @@ var x;
 
 function SetHttp(
   serve = function(req, res) {
-    this.root = __dirname;//root
-    this.Parser = require("./HTML.js");//default parser
-    res.end(this.Parser.parseFile(c.URI(req.url).pathname));//parses File
+    this.root = __dirname; //root
+    this.Parser = require("./HTML.js"); //default parser
+    res.end(this.Parser.parseFile(this.root + c.URI(req.url).pathname)); //parses File
   },
   port = 3000,
   options = { Uses: null, ServerType: "File" }
